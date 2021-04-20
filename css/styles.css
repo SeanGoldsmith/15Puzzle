@@ -88,7 +88,13 @@
     left: 250px;
     top: 375px;
   }
-  
+  #emptyTile{
+      position: absolute;
+      left: 375px;
+      top:375px;
+      background-color: black;
+  }
+
   .tile {
     display:flex;
     justify-content: center;
