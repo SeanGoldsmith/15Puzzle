@@ -1,0 +1,100 @@
+#whole {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  #board {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+  }
+  
+  #tile1{
+    position: absolute;
+    left: 0px;
+    top:0px;
+  }
+  #tile2{
+    position: absolute;
+    left: 125px;
+    top: 0xp;
+  }
+  #tile3{
+    position: relative;
+    left: 250px;
+    top: 0px;
+  }
+  #tile4{
+    position: absolute;
+    left: 375px;
+    top: 0px;
+  }
+  #tile5{
+    position: absolute;
+    left: 0px;
+    top: 125px;
+  }
+  #tile6{
+    position: absolute;
+    left: 125px;
+    top: 125px;
+  }
+  #tile7{
+    position: absolute;
+    left: 250px;
+    top: 125px;
+  }
+  #tile8{
+    position: absolute;
+    left: 375px;
+    top: 125px;
+  }
+  #tile9{
+    position: absolute;
+    left: 0px;
+    top: 250px;
+  }
+  #tile10{
+    position: absolute;
+    left: 125px;
+    top: 250px;
+  }
+  #tile11{
+    position: absolute;
+    left: 250px;
+    top: 250px;
+  }
+  #tile12{
+    position: absolute;
+    left: 375px;
+    top: 250px;
+  }
+  #tile13{
+    position: absolute;
+    left: 0px;
+    top: 375px;
+  }
+  #tile14{
+    position: absolute;
+    left: 125px;
+    top: 375px;
+  }
+  #tile15{
+    position: absolute;
+    left: 250px;
+    top: 375px;
+  }
+  
+  .tile {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 123px;
+    background-color: red;
+    border: white solid 1px;
+  }
