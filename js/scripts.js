@@ -37,3 +37,36 @@ function checkIfMoveAvailable(tile) {
     }
     
 }
+
+
+
+function findCurrentTile(positionNumber) {
+    let tiles = document.getElementsByClassName('tile');
+    let tileArray= Array.from(tiles);
+    let currentTile = null;
+    //console.log(tileArray[5].attributes[2].value);
+    tileArray.forEach(elem => {
+        if (elem.attributes[2].value==positionNumber) {
+            currentTile = elem.attributes[2].value;
+        }
+    })
+    return document.getElementById("tile"+currentTile);
+    //console.log(result + 'result');
+}
+
+function randomMove() {
+    let emptyTileNumber = parseInt(document.getElementById("emptyTile").getAttribute("currentPosition"),10);
+    let moves = moveable[emptyTileNumber-1]
+    let randomIndex = Math.floor((Math.random() * moves.length + 1))-1;
+    let selectedMove = moves[randomIndex];
+    let currentTile = findCurrentTile(selectedMove);
+    moveTiles(currentTile,document.getElementById('emptyTile'));
+    
+
+}
+
+function scramble() {
+    for (i=0;i<40;i++) {
+        setTimeout(randomMove(), 5000);
+    }
+}
