@@ -4,18 +4,24 @@ body {
 }
 
 button {
-  color: #0f0202c4;
+  color: #776969c4;
   width: 50%;
   margin: 0 25%;
   height: 35px;
   display: block;
-  border: #0f0202c4 solid 1px;
+  border: whitesmoke solid 5px;
   background-color: #98d5ee;
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 600;
   font-size: 1.35em;
+  transition: all 250ms ease-in-out;
 }
 
+button:hover {
+  color: #0f0202c4;
+  border: none;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
 #board-container {
     width: 50vw;
     display: flex;
