@@ -1,6 +1,5 @@
 #whole {
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -112,8 +111,7 @@
   }
 
   .tile {
-    background-image: url(../img/owl.jpeg);
-    background-size: 500px 500px;
+    background-color: red;
     color: white;
     font-size: 2em;
     font-family: helvetica;
@@ -124,4 +122,9 @@
     width: 123px;
     height: 123px;
     border: white solid 1px;
+  }
+
+  .photo-back {
+    background-image: url(../img/owl.jpeg);
+    background-size: 500px 500px;
   }
