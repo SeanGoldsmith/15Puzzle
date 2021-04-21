@@ -7,10 +7,11 @@
   }
   
   #board {
+    background-image: url("../img/larry.jpg");
+    background-size: contain;
     position: relative;
     width: 500px;
     height: 500px;
-    background-color: black;
   }
   
   #tile1{
@@ -19,83 +20,100 @@
     top:0px;
   }
   #tile2{
+    background-position: -125px 0px;
     position: absolute;
     left: 125px;
     top: 0xp;
   }
   #tile3{
+    background-position: -250px 0px;
     position: relative;
     left: 250px;
     top: 0px;
   }
   #tile4{
+    background-position: -375px 0px;
     position: absolute;
     left: 375px;
     top: 0px;
   }
   #tile5{
+    background-position: 0px -125px;
     position: absolute;
     left: 0px;
     top: 125px;
   }
   #tile6{
+    background-position: -125px -125px;
     position: absolute;
     left: 125px;
     top: 125px;
   }
   #tile7{
+    background-position: -250px -125px;
     position: absolute;
     left: 250px;
     top: 125px;
   }
   #tile8{
+    background-position: -375px -125px;
     position: absolute;
     left: 375px;
     top: 125px;
   }
   #tile9{
+    background-position: 0px -250px;
     position: absolute;
     left: 0px;
     top: 250px;
   }
   #tile10{
+    background-position: -125px -250px;
     position: absolute;
     left: 125px;
     top: 250px;
   }
   #tile11{
+    background-position: -250px -250px;
     position: absolute;
     left: 250px;
     top: 250px;
   }
   #tile12{
+    background-position: -375px -250px;
     position: absolute;
     left: 375px;
     top: 250px;
   }
   #tile13{
+    background-position: 0px -375px;
     position: absolute;
     left: 0px;
     top: 375px;
   }
   #tile14{
+    background-position: -125px -375px;
     position: absolute;
     left: 125px;
     top: 375px;
   }
   #tile15{
+    background-position: -250px -375px;
     position: absolute;
     left: 250px;
     top: 375px;
   }
   #emptyTile{
-      position: absolute;
-      left: 375px;
-      top:375px;
-      background-color: black;
+    background-image: none;
+    position: absolute;
+    left: 375px;
+    top:375px;
+    background-color: black;
   }
 
   .tile {
+    background-image: url(../img/owl.jpeg);
+    background-size: 500px 500px;
     color: white;
     font-size: 2em;
     font-family: helvetica;
@@ -105,6 +123,5 @@
     align-items: center;
     width: 123px;
     height: 123px;
-    background-color: red;
     border: white solid 1px;
   }
