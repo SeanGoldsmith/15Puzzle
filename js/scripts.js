@@ -1,4 +1,4 @@
-var colorPicker = new iro.ColorPicker('#picker', {width: 100});
+var colorPicker = new iro.ColorPicker('#picker', {width: 150});
 
 
 let moveable = [ [2,5],[1,6,3],[2,7,4],

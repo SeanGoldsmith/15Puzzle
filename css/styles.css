@@ -1,130 +1,166 @@
-#whole {
-    width: 100vw;
+body {
+  display: flex;
+  background-color: #5c5e5d;
+}
+
+button {
+  color: #0f0202c4;
+  width: 50%;
+  margin: 0 25%;
+  height: 35px;
+  display: block;
+  border: #0f0202c4 solid 1px;
+  background-color: #98d5ee;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.35em;
+}
+
+#board-container {
+    width: 50vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin-top: 25px;
   }
   
-  #board {
-    background-image: url("../img/larry.jpg");
-    background-size: contain;
-    position: relative;
-    width: 500px;
-    height: 500px;
-  }
-  
-  #tile1{
-    position: absolute;
-    left: 0px;
-    top:0px;
-  }
-  #tile2{
-    background-position: -125px 0px;
-    position: absolute;
-    left: 125px;
-    top: 0xp;
-  }
-  #tile3{
-    background-position: -250px 0px;
-    position: relative;
-    left: 250px;
-    top: 0px;
-  }
-  #tile4{
-    background-position: -375px 0px;
-    position: absolute;
-    left: 375px;
-    top: 0px;
-  }
-  #tile5{
-    background-position: 0px -125px;
-    position: absolute;
-    left: 0px;
-    top: 125px;
-  }
-  #tile6{
-    background-position: -125px -125px;
-    position: absolute;
-    left: 125px;
-    top: 125px;
-  }
-  #tile7{
-    background-position: -250px -125px;
-    position: absolute;
-    left: 250px;
-    top: 125px;
-  }
-  #tile8{
-    background-position: -375px -125px;
-    position: absolute;
-    left: 375px;
-    top: 125px;
-  }
-  #tile9{
-    background-position: 0px -250px;
-    position: absolute;
-    left: 0px;
-    top: 250px;
-  }
-  #tile10{
-    background-position: -125px -250px;
-    position: absolute;
-    left: 125px;
-    top: 250px;
-  }
-  #tile11{
-    background-position: -250px -250px;
-    position: absolute;
-    left: 250px;
-    top: 250px;
-  }
-  #tile12{
-    background-position: -375px -250px;
-    position: absolute;
-    left: 375px;
-    top: 250px;
-  }
-  #tile13{
-    background-position: 0px -375px;
-    position: absolute;
-    left: 0px;
-    top: 375px;
-  }
-  #tile14{
-    background-position: -125px -375px;
-    position: absolute;
-    left: 125px;
-    top: 375px;
-  }
-  #tile15{
-    background-position: -250px -375px;
-    position: absolute;
-    left: 250px;
-    top: 375px;
-  }
-  #emptyTile{
-    background-image: none;
-    position: absolute;
-    left: 375px;
-    top:375px;
-    background-color: black;
-  }
+#options {
+  padding: 25px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50vw;
+}
 
-  .tile {
-    background-color: red;
-    color: white;
-    font-size: 2em;
-    font-family: helvetica;
-    font-weight: bold;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 123px;
-    height: 123px;
-    border: white solid 1px;
-  }
+#board {
+  background-image: url("../img/larry.jpg");
+  background-size: contain;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 20px 0;
+}
 
-  .photo-back {
-    background-image: url(../img/owl.jpeg);
-    background-size: 500px 500px;
-  }
+#picker-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#tile1{
+  position: absolute;
+  left: 0px;
+  top:0px;
+}
+#tile2{
+  background-position: -125px 0px;
+  position: absolute;
+  left: 125px;
+  top: 0xp;
+}
+#tile3{
+  background-position: -250px 0px;
+  position: relative;
+  left: 250px;
+  top: 0px;
+}
+#tile4{
+  background-position: -375px 0px;
+  position: absolute;
+  left: 375px;
+  top: 0px;
+}
+#tile5{
+  background-position: 0px -125px;
+  position: absolute;
+  left: 0px;
+  top: 125px;
+}
+#tile6{
+  background-position: -125px -125px;
+  position: absolute;
+  left: 125px;
+  top: 125px;
+}
+#tile7{
+  background-position: -250px -125px;
+  position: absolute;
+  left: 250px;
+  top: 125px;
+}
+#tile8{
+  background-position: -375px -125px;
+  position: absolute;
+  left: 375px;
+  top: 125px;
+}
+#tile9{
+  background-position: 0px -250px;
+  position: absolute;
+  left: 0px;
+  top: 250px;
+}
+#tile10{
+  background-position: -125px -250px;
+  position: absolute;
+  left: 125px;
+  top: 250px;
+}
+#tile11{
+  background-position: -250px -250px;
+  position: absolute;
+  left: 250px;
+  top: 250px;
+}
+#tile12{
+  background-position: -375px -250px;
+  position: absolute;
+  left: 375px;
+  top: 250px;
+}
+#tile13{
+  background-position: 0px -375px;
+  position: absolute;
+  left: 0px;
+  top: 375px;
+}
+#tile14{
+  background-position: -125px -375px;
+  position: absolute;
+  left: 125px;
+  top: 375px;
+}
+#tile15{
+  background-position: -250px -375px;
+  position: absolute;
+  left: 250px;
+  top: 375px;
+}
+#emptyTile{
+  background-image: none;
+  position: absolute;
+  left: 375px;
+  top:375px;
+  background-color: black;
+}
+
+.tile {
+  background-color: #252927;
+  color: white;
+  font-size: 2em;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 123px;
+  height: 123px;
+  border: white solid 1px;
+}
+
+.photo-back {
+  background-image: url(../img/owl.jpeg);
+  background-size: 500px 500px;
+}
