@@ -167,6 +167,9 @@ button:hover {
 }
 
 .photo-back {
-  background-image: url(../img/owl.jpeg);
+  image-rendering: -webkit-optimize-contrast;
+
+
+  background-image: url(../img/owl.jpg);
   background-size: 500px 500px;
 }
