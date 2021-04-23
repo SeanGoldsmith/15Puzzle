@@ -1,14 +1,9 @@
-This directory contains your keys and certificates.
+This is a 15 puzzle game I made with html/css js.  You can hit the scramble button as many times as you like to scramble the puzzle.
 
-`privkey.pem`  : the private key for your certificate.
-`fullchain.pem`: the certificate file used in most server software.
-`chain.pem`    : used for OCSP stapling in Nginx >=1.3.7.
-`cert.pem`     : will break many server configurations, and should not be used
-                 without reading further documentation (see link below).
+Each scramble will perform 40 random moves.
 
-WARNING: DO NOT MOVE OR RENAME THESE FILES!
-         Certbot expects these files to remain in this location in order
-         to function properly!
+You can select a color with the color picker and then hit "text color" or "tile color" to changed the colors of the puzzle.
 
-We recommend not moving these files. For more information, see the Certbot
-User Guide at https://certbot.eff.org/docs/using.html#where-are-my-certificates.
+Finally, you can hit the picture button to toggle a picture of a pretty owl and the puzzle background. I plan to add a gallery of photos to choose from soon.
+
+Please enjoy!
