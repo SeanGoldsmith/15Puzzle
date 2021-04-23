@@ -153,6 +153,7 @@ button:hover {
 }
 
 .tile {
+  cursor: pointer;
   background-color: #252927;
   color: white;
   font-size: 2em;
